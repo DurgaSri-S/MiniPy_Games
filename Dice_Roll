@@ -1,0 +1,17 @@
+import random
+print("**********Welcome***********")
+def dice():
+  while True:
+        try:
+            a=input("Roll?(Y/N)").lower()
+            if a=='Y' or a=='y':
+                print("Die1:",random.randint(1,6))
+                print("Die2:",random.randint(1,6))
+            elif a=='N' or a=='n':
+                print("Thank you..")
+                break
+            else:
+                print("Invalid Input")
+        except Exception as e:
+            print("Error:",e)
+dice()
