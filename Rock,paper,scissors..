@@ -1,0 +1,90 @@
+import random
+print("*****WELCOME TO THE ROCK,PAPER,SICCORS GAME***** " )
+#a=int(input("perss 0 for rock,1 for paper and 2 for cissors:"))
+while True:
+    a=input("enter rock,paper or scissors:").lower()
+    print("your choice:",a)
+    if a=="rock":
+        print("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+      
+
+    elif a=="paper":
+        print("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+    elif a=="scissors":
+        print("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+
+    else:
+        print("invalid input")
+    
+    b=['rock','paper','scissors']
+    C=random.choice(b)
+    if C=="rock":
+        print("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+    elif C=="paper":
+        print("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+    elif C=="scissors":
+        print("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+    else:
+        print("please enter rock,paper or scissors")
+    
+    print("computer's choice:",C)
+    if a == C:
+        print("Match draw")
+    elif (a=='rock' and C=='paper'):
+        print("you lose")
+    elif (a=='paper' and C=='scissors'):
+        print("you lose")
+    elif (a=='scissors' and C=='rock'):
+        print("you lose")
+    elif (a=='paper' and C=='rock'):
+        print("you win!!!")
+    elif (a=='scissors' and C=='paper'):
+        print("you win!!!")
+    elif (a=='rock' and C=='scissors'):
+        print("you win!!!")
+    else:
+        print("you lose..")
+    
+
